@@ -6,7 +6,9 @@ import Mockup1 from "../assets/mockup-1.png";
 const Projects = () => {
   return (
     <section className="container mx-auto w-3/4">
-      <h1 className="text-2xl text-gray-200 text-center mb-8">Featured work</h1>
+      <h1 className="text-2xl text-gray-200 text-center mt-16 mb-8">
+        Featured work
+      </h1>
 
       <ul className="flex flex-col items-center">
         <li>
