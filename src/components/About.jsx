@@ -6,7 +6,7 @@ import Tilty from "react-tilty";
 
 const About = () => {
   return (
-    <section>
+    <section className="xl:h-[90vh]">
       <Tilty
         className="bg-slate-950/30 mx-auto w-full lg:w-3/4 2xl:w-1/2 backdrop-blur-md mt-8 md:mt-16 rounded-3xl hover:rounded-none"
         reverse
@@ -60,7 +60,7 @@ const About = () => {
               href=""
               className="py-4 px-8 rounded-3xl bg-gradient-to-t from-violet-600 to-indigo-500 text-white transition hover:ring hover:ring-violet-700 hover:scale-105 z-10"
             >
-              EXPLORE MORE
+              Get in touch
             </a>
             <ul className="flex gap-6">
               <li>

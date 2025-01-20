@@ -1,6 +1,8 @@
 import BGblurry from "./assets/bbblurry.svg";
 import Header from "./components/Header";
 import About from "./components/About";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -8,10 +10,12 @@ function App() {
       <img
         src={BGblurry}
         alt="bg-blurry"
-        className="absolute animate-slow-pulse"
+        className="absolute animate-slow-pulse pointer-events-none"
       />
       <Header />
       <About />
+      <Projects />
+      <Footer />
     </div>
   );
 }
