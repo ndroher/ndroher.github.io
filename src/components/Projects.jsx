@@ -6,12 +6,15 @@ import Mockup1 from "../assets/mockup-1.png";
 const Projects = () => {
   return (
     <section className="container mx-auto w-3/4" id="projects">
-      <h1 className="text-2xl text-gray-200 text-center mt-16 mb-8">
+      <h1
+        className="text-2xl text-gray-200 text-center mt-16 mb-8"
+        data-aos="zoom-out-down"
+      >
         Featured work
       </h1>
 
       <ul className="flex flex-col items-center">
-        <li>
+        <li data-aos="fade-left">
           <CardProjects
             icon={Icon1}
             title="MySwimmingApp"

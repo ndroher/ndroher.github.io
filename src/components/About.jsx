@@ -14,7 +14,11 @@ const About = () => {
         glare
         maxGlare={0.1}
       >
-        <div className="p-12 md:p-24 flex flex-col gap-12 justify-between">
+        <div
+          className="p-12 md:p-24 flex flex-col gap-12 justify-between"
+          data-aos="zoom-out-up"
+          data-aos-duration="1000"
+        >
           <div className="flex flex-col gap-2">
             <h1 className="font-extrabold text-5xl bg-clip-text text-transparent bg-gradient-to-r from-gray-200 to-gray-100">
               Hi, I'm{" "}
