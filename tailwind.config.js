@@ -6,6 +6,7 @@ export default {
       animation: {
         "text-slide": "text-slide 35s cubic-bezier(0.83, 0, 0.17, 1) infinite",
         "slow-pulse": "slow-pulse 10s cubic-bezier(0.4, 0, 0.6, 1) infinite;",
+        rotate: "rotate 10s linear infinite",
       },
       keyframes: {
         "text-slide": {
@@ -59,6 +60,10 @@ export default {
           "50%": {
             opacity: 0.5,
           },
+        },
+        rotate: {
+          "0%": { transform: "rotate(0deg) scale(10)" },
+          "100%": { transform: "rotate(-360deg) scale(10)" },
         },
       },
       fontFamily: {
