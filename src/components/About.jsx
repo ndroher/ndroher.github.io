@@ -57,35 +57,38 @@ const About = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-12 justify-between items-center">
             <a
-              href=""
+              href="mailto:ndroher+work@proton.me"
               className="py-4 px-8 rounded-3xl bg-gradient-to-t from-violet-600 to-indigo-500 text-white transition hover:ring hover:ring-violet-700 hover:scale-105 z-10"
             >
               Get in touch
             </a>
             <ul className="flex gap-6">
               <li>
-                <a href="">
+                <a href="https://github.com/ndroher" target="_blank">
                   <img
                     src={GithubLogo}
-                    alt=""
+                    alt="GitHub Logo"
                     className="w-12 h-12 hover:scale-125 grayscale brightness-50 hover:brightness-100 transition"
                   />
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://medium.com/@ndroher" target="_blank">
                   <img
                     src={MediumLogo}
-                    alt=""
+                    alt="Medium Logo"
                     className="w-12 h-12 hover:scale-125 grayscale brightness-50 hover:brightness-100 transition"
                   />
                 </a>
               </li>
               <li>
-                <a href="">
+                <a
+                  href="https://www.linkedin.com/in/leandroherbas/"
+                  target="_blank"
+                >
                   <img
                     src={LinkedinLogo}
-                    alt=""
+                    alt="LinkedIn Logo"
                     className="w-12 h-12 hover:scale-125 brightness-50 grayscale hover:brightness-100 hover:grayscale-0 transition"
                   />
                 </a>

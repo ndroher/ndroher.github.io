@@ -1,6 +1,13 @@
 import React from "react";
 
-const CardProjects = ({ icon, title, technologies, description, image }) => {
+const CardProjects = ({
+  icon,
+  title,
+  technologies,
+  description,
+  image,
+  url,
+}) => {
   return (
     <div className="relative w-screen">
       <div className="bg-slate-900 w-full sm:w-3/4 2xl:w-1/2 mx-auto rounded-lg grid grid-cols-5 items-start relative overflow-hidden z-10 border border-slate-800 p-[1.5px]">
@@ -27,7 +34,8 @@ const CardProjects = ({ icon, title, technologies, description, image }) => {
             <p className="text-gray-300">{description}</p>
           </div>
           <a
-            href=""
+            href={url}
+            target="_blank"
             className="py-4 px-8 rounded-3xl bg-gradient-to-t from-violet-600 to-indigo-500 text-white transition hover:ring hover:ring-violet-700 hover:scale-105 z-10"
           >
             Learn more
@@ -35,7 +43,7 @@ const CardProjects = ({ icon, title, technologies, description, image }) => {
         </div>
         <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#4338ca_20deg,transparent_120deg)]"></div>
       </div>
-      <a href="">
+      <a href={url} target="_blank">
         <img
           src={image}
           alt={`${title} image`}

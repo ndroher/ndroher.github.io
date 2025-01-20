@@ -5,7 +5,7 @@ import Mockup1 from "../assets/mockup-1.png";
 
 const Projects = () => {
   return (
-    <section className="container mx-auto w-3/4">
+    <section className="container mx-auto w-3/4" id="projects">
       <h1 className="text-2xl text-gray-200 text-center mt-16 mb-8">
         Featured work
       </h1>
@@ -18,6 +18,7 @@ const Projects = () => {
             technologies={["React", "WordPress", "PWA", "REST API"]}
             description="A Progressive Web App designed to help swimmers create personalized training plans, track their progress and engage with other athletes."
             image={Mockup1}
+            url="https://github.com/ndroher/MySwimmingApp"
           />
         </li>
       </ul>

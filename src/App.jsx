@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-slate-950 overflow-x-clip h-full relative">
+    <div className="bg-slate-950 overflow-x-clip h-full relative" id="about">
       <div className="overflow-hidden h-full">
         <img
           src={BGblurry}
