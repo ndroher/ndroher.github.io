@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CardProjects = ({
   icon,
@@ -8,6 +9,9 @@ const CardProjects = ({
   image,
   url,
 }) => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="relative w-screen">
       <div className="bg-slate-900 w-full sm:w-3/4 2xl:w-1/2 mx-auto rounded-lg grid grid-cols-5 items-start relative overflow-hidden z-10 border border-slate-800 p-[1.5px]">
@@ -33,23 +37,23 @@ const CardProjects = ({
             </div>
             <p className="text-gray-300">{description}</p>
           </div>
-          <a
-            href={url}
-            target="_blank"
+          <Link
+            onClick={scrollToTop}
+            to={url}
             className="py-4 px-8 rounded-3xl bg-gradient-to-t from-violet-600 to-indigo-500 text-white transition hover:ring hover:ring-violet-700 hover:scale-105 z-10"
           >
             Learn more
-          </a>
+          </Link>
         </div>
         <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#4338ca_20deg,transparent_120deg)]"></div>
       </div>
-      <a href={url} target="_blank">
+      <Link to={url} onClick={scrollToTop}>
         <img
           src={image}
           alt={`${title} image`}
           className="absolute h-full hover:scale-110 top-0 right-[7.5%] 2xl:right-[18%] transition z-20 hidden xl:block"
         />
-      </a>
+      </Link>
     </div>
   );
 };

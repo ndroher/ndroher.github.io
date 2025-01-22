@@ -1,7 +1,7 @@
 import React from "react";
 import CardProjects from "./CardProjects";
-import Icon1 from "../assets/myswimmingapp.png";
-import Mockup1 from "../assets/mockup-1.png";
+import Icon1 from "../assets/my-swimming-app/myswimmingapp-logo.png";
+import Mockup1 from "../assets/my-swimming-app/myswimmingapp-mockup.png";
 
 const Projects = () => {
   return (
@@ -21,7 +21,7 @@ const Projects = () => {
             technologies={["React", "WordPress", "PWA", "REST API"]}
             description="A Progressive Web App designed to help swimmers create personalized training plans, track their progress and engage with other athletes."
             image={Mockup1}
-            url="https://github.com/ndroher/MySwimmingApp"
+            url="/my-swimming-app"
           />
         </li>
       </ul>
