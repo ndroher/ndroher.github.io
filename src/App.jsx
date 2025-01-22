@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import NotFound from "./NotFound";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Home from "./Home";
@@ -19,7 +20,7 @@ function App() {
     AOS.init();
   }, []);
   return (
-    <div className="bg-slate-950 overflow-x-clip h-full relative">
+    <div className="bg-slate-950 overflow-x-clip min-h-screen relative">
       <div className="overflow-hidden h-full">
         <img
           src={BGblurry}
@@ -105,6 +106,7 @@ function App() {
             />
           }
         ></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer />
     </div>
