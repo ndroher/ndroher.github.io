@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import ModalMedia from "./ModalMedia";
+import Head from "../Head";
 
 const ProjectPage = ({
   icon,
@@ -51,6 +52,7 @@ const ProjectPage = ({
 
   return (
     <>
+      <Head title={title + " | "} />
       <div className="container mx-auto rounded-none md:rounded-3xl p-6 2xl:p-12 mt-8 bg-slate-900 relative z-10 border border-slate-800">
         <div className="flex flex-col-reverse 2xl:flex-row 2xl:items-center justify-between gap-4">
           <div className="flex gap-4 items-center" data-aos="fade-right">
