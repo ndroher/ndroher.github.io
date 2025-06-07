@@ -14,6 +14,12 @@ import MySwimmingAppMedia1 from "./assets/my-swimming-app/myswimmingapp-statisti
 import MySwimmingAppMedia2 from "./assets/my-swimming-app/myswimmingapp-profile.png";
 import MySwimmingAppMedia3 from "./assets/my-swimming-app/myswimmingapp-history.png";
 import MySwimmingAppMedia4 from "./assets/my-swimming-app/myswimmingapp-login.png";
+import FeelTheWeatherLogo from "./assets/feel-the-weather/feeltheweather-logo.png";
+import FeelTheWeatherBanner from "./assets/feel-the-weather/feeltheweather-banner.png";
+import FeelTheWeatherMedia1 from "./assets/feel-the-weather/feeltheweather-desktop_screenshot_1.png";
+import FeelTheWeatherMedia2 from "./assets/feel-the-weather/feeltheweather-desktop_screenshot_3.png";
+import FeelTheWeatherMedia3 from "./assets/feel-the-weather/feeltheweather-desktop_screenshot_2.png";
+import FeelTheWeatherMedia4 from "./assets/feel-the-weather/feeltheweather-desktop_screenshot_4.png";
 
 function App() {
   React.useEffect(() => {
@@ -41,6 +47,7 @@ function App() {
               banner={MySwimmingAppBanner}
               techStack={[
                 "React",
+                "JavaScript",
                 "WordPress",
                 "PHP",
                 "Material UI",
@@ -101,6 +108,80 @@ function App() {
                 {
                   url: MySwimmingAppMedia4,
                   description: "MySwimmingApp — Login Page",
+                },
+              ]}
+            />
+          }
+        ></Route>
+        <Route
+          path="/feel-the-weather"
+          element={
+            <ProjectPage
+              icon={FeelTheWeatherLogo}
+              title="FeelTheWeather"
+              releaseDate="May 2025"
+              banner={FeelTheWeatherBanner}
+              techStack={[
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "tsParticles",
+                "REST API",
+                "Figma",
+                "Git",
+              ]}
+              repositories={[
+                {
+                  url: "https://github.com/ndroher/FeelTheWeather",
+                  user: "ndroher",
+                  name: "FeelTheWeather",
+                  description:
+                    "A Progressive Web App (PWA) for immersive and interactive weather experiences.",
+                },
+              ]}
+              deployURL="https://feeltheweather.vercel.app/"
+              about={
+                <>
+                  This project aims to transform real-time weather data into an
+                  immersive and interactive user experience. The application
+                  goes beyond simple forecasting by creating a website that
+                  completely changes its visuals, sounds, and particle effects
+                  to match the weather of a searched location, allowing the user
+                  to truly feel the climate.
+                  <br />
+                  <br />
+                  Using the OpenWeather API as its data source, the app
+                  leverages the tsParticles library to generate dynamic effects
+                  that react to weather conditions and user interactions. The
+                  user interface was styled with a focus on the Glassmorphism
+                  design trend to create a modern and visually appealing layout.
+                  <br />
+                  <br />
+                  The development followed a Progressive Web App (PWA) approach,
+                  ensuring broad compatibility and allowing the application to
+                  be installed on any device. This project serves as a practical
+                  demonstration of working with dynamic data, applying
+                  responsive and interactive styling, and manipulating media to
+                  enrich the user experience.
+                </>
+              }
+              medias={[
+                {
+                  url: FeelTheWeatherMedia1,
+                  description:
+                    "Rio de Janeiro, Clear Sky Night, EN-US, Desktop",
+                },
+                {
+                  url: FeelTheWeatherMedia2,
+                  description: "Tokyo, Light Rain Day, JP, Desktop",
+                },
+                {
+                  url: FeelTheWeatherMedia3,
+                  description: "Seoul, Overcast Clouds Day, KR, Desktop",
+                },
+                {
+                  url: FeelTheWeatherMedia4,
+                  description: "Isone, Mist, EN-US, Desktop",
                 },
               ]}
             />

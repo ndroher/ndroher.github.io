@@ -8,6 +8,7 @@ const CardProjects = ({
   description,
   image,
   url,
+  deployURL,
 }) => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -37,13 +38,24 @@ const CardProjects = ({
             </div>
             <p className="text-gray-300">{description}</p>
           </div>
-          <Link
-            onClick={scrollToTop}
-            to={url}
-            className="py-4 px-8 rounded-3xl bg-gradient-to-t from-violet-600 to-indigo-500 text-white transition hover:ring hover:ring-violet-700 hover:scale-105 z-10"
-          >
-            Learn more
-          </Link>
+          <div className="flex gap-4 text-nowrap">
+            <Link
+              onClick={scrollToTop}
+              to={url}
+              className="py-4 px-8 rounded-3xl bg-gradient-to-t from-violet-600 to-indigo-500 text-white transition hover:ring hover:ring-violet-700 hover:scale-105 z-10"
+            >
+              Learn more
+            </Link>
+            {deployURL && (
+              <a
+                href={deployURL}
+                target="_blank"
+                className=" text-gray-300 py-4 px-8 rounded-3xl ring-2 hover:ring-violet-700 hover:scale-105 transition"
+              >
+                Live Demo
+              </a>
+            )}
+          </div>
         </div>
         <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#4338ca_20deg,transparent_120deg)]"></div>
       </div>
