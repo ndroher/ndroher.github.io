@@ -12,6 +12,7 @@ const ProjectPage = ({
   repositories,
   about,
   medias,
+  deployURL,
 }) => {
   const [isSticky, setIsSticky] = useState(false);
   const stickyRef = useRef(null);
@@ -118,7 +119,7 @@ const ProjectPage = ({
             </div>
           </div>
           <div
-            className="order-first 2xl:order-none flex flex-col gap-4 2xl:sticky top-1/4 max-w-full"
+            className="order-first 2xl:order-none flex flex-col gap-4 2xl:sticky top-1/4 max-w-full items-start"
             ref={stickyRef}
           >
             <div
@@ -183,6 +184,15 @@ const ProjectPage = ({
                 ))}
               </div>
             </div>
+            {deployURL && (
+              <a
+                href={deployURL}
+                target="_blank"
+                className=" text-gray-300 py-4 px-8 rounded-3xl ring-2 hover:ring-violet-700 hover:scale-105 transition"
+              >
+                Live Demo
+              </a>
+            )}
           </div>
         </div>
       </div>

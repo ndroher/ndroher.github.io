@@ -33,7 +33,7 @@ const About = () => {
             <h2 className="font-bold text-5xl text-gray-200 font-caveat">
               a{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-t from-violet-600 to-indigo-500">
-                Front-end Web Developer
+                Web Developer
               </span>
               .
             </h2>
